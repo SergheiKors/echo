@@ -8,10 +8,10 @@ public class PostmanEchoTest {
     @Test
 
     void shouldReturnSendData() {
-        String text = "Hi";
+        String text = "Hello";
         given()
-                .baseUri("https://postman-echo.com/post")
-                .body(text)
+                .baseUri("https://postman-echo.com/")
+                .body("Hi")
                 .when()
                 .post("/post")
                 .then()
